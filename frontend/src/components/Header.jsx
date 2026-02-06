@@ -17,34 +17,38 @@ export function Header() {
                 />
               </svg>
             </div>
-            <div>
-              <span className="text-xl font-bold text-white tracking-tight">
-                HealthVitals
-              </span>
-              <p className="text-xs text-blue-100 hidden sm:block">
-                Your wellness companion
-              </p>
-            </div>
+            <Link to="/dashboard">
+              <div>
+                <span className="text-xl font-bold text-white tracking-tight">
+                  HealthVitals
+                </span>
+                <p className="text-xs text-blue-100 hidden sm:block">
+                  Your wellness companion
+                </p>
+              </div>
+            </Link>
           </div>
 
           {/* Navigation - Glass morphism style */}
           <nav className="hidden md:flex items-center gap-2 flex-1 justify-center max-w-md">
-            <button className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium text-white bg-blue-600 backdrop-blur-sm hover:bg-blue-600 transition-all border border-white/20 shadow-lg whitespace-nowrap">
-              <svg
-                className="w-4 h-4"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                />
-              </svg>
-              Home
-            </button>
+            <Link to="/dashboard">
+              <button className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium text-white bg-blue-600 backdrop-blur-sm hover:bg-blue-600 transition-all border border-white/20 shadow-lg whitespace-nowrap">
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                  />
+                </svg>
+                Home
+              </button>
+            </Link>
 
             <Link to="/dashboard/reports">
               <button className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium text-blue-100 hover:text-white hover:bg-white/10 transition-all whitespace-nowrap">
@@ -65,7 +69,7 @@ export function Header() {
               </button>
             </Link>
 
-            <Link to="/dashboard/DoctorFind" >
+            <Link to="/dashboard/DoctorFind">
               <button className="flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-medium text-blue-100 hover:text-white hover:bg-white/10 transition-all whitespace-nowrap">
                 <svg
                   className="w-4 h-4"

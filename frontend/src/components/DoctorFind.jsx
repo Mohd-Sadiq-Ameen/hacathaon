@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Header } from './Header';
 
 // Hardcoded doctor data
 const doctorsData = [
@@ -163,7 +164,7 @@ export default function DoctorFind() {
 
   return (
     <div className="min-h-screen w-screen overflow-x-hidden bg-gradient-to-br from-blue-50 via-white to-indigo-50">
-      {/* Header */}
+      <Header/>
       <header className="w-full bg-white border-b border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center justify-between">
